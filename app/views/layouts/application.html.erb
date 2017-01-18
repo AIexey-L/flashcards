@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flashcards</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class="clearfix">
+      <h1>Флэшкарточкер</h1>
+      <ul class="nav nav-pills" role="tablist">
+        <li class="active"><a href="#">Все карточки</a></li>
+        <li><a href="#">Добавить карточку</a></li>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
